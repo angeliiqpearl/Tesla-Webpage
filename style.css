@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans&family=The+Nautigal:wght@700&family=Ubuntu:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Ubuntu', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/image-5);
+    background-color: rgba(0,0,0,0,5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+    transition: background-image 1s;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+        width: 197px;
+    cursor: pointer;
+    padding: 0px;
+    margin: 1px;
+}
+
+nav ul{
+    flex: 1;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in-out .4s;
+    font-size: 20px;
+}
+ ul li a:hover{
+    color: crimson;   
+border-style: solid;
+}
+nav ul1{
+    flex: 1;
+    text-align: center;
+    list-style: none;
+    justify-content:space-around;
+}
+nav ul1 li{
+    display: inline-block;
+    margin: 10px 20px;
+    justify-content: space-between;
+}
+nav ul1 li a{
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in-out .4s;
+    justify-content: space-between;
+    font-size: 20px;
+}
+ul1 li a:hover{
+color:crimson;
+border-style: solid;
+}
+nav .btn {
+    color: black;
+    text-decoration: none;
+    border: 1px solid rgb(61, 2, 2);
+    padding: 10px 30px;
+    border-radius: 14px;
+    margin-right: 2%;
+}
+nav .btn:hover{
+    background:crimson;
+}
+.info{
+    width: 100%;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    transition: ease-in-out .4s;
+}
+.info div:hover{
+    color:firebrick;
+    transition: ease-in-out.4s;
+}
+.info div{
+    margin: 0 20px;
+}
+.info div h2{
+    font-size: 31px;
+    font-weight: 400;
+}
+.info .line{
+    flex: 1;
+    background: #fff;
+    height: 4px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Spline+Sans&family=The+Nautigal:wght@700&family=Ubuntu:wght@700&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color:#ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: 300;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/* @media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#ff54a2,#ff575a);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2
+    }
+    
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #Modellist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+   nav .btn{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .info{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .info div{
+        width: 77%;
+    }
+    .info div h2{
+     transform: translateX(75px);
+    }
+    .line{
+        flex-basis: 100%;
+    }
+    /* .col-1 h2{
+        font: size 35px; ;
+    }
+    .col-1 h3{
+        font: size 15px; ;
+    } */
